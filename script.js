@@ -1,6 +1,6 @@
 // Initialize EmailJS
 (function() {
-    emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your actual EmailJS public key
+    emailjs.init("_zL6BOMp5DdhhUEPC");
 })();
 
 // Smooth scrolling function
@@ -33,7 +33,7 @@ function submitRSVP() {
         subject: 'New RSVP Submission'
     };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send('service_4kq8q4k', 'template_j1uftzp', templateParams)
         .then(function(response) {
             console.log('RSVP email sent successfully:', response);
             // Show success message
@@ -58,7 +58,7 @@ function submitMessage() {
         subject: 'New Birthday Message'
     };
 
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    emailjs.send('service_4kq8q4k', 'template_008q27j', templateParams)
         .then(function(response) {
             console.log('Message email sent successfully:', response);
             // Show success message
