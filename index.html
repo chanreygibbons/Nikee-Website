@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>She is tying up her 20s - 30th Birthday Celebration</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="hero" class="hero-section">
+        <!-- Background Video -->
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="images/Black Minimalist Modern Aesthetic Photo Collage Wrap Up Recap Instagram Reel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      
+        <!-- Overlay -->
+        <div class="hero-overlay"></div>
+      
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <h1 class="hero-title">She is tying up her 20s</h1>
+          <p class="hero-subtitle">A decade of memories, perfectly wrapped with a bow</p>
+          <div class="hero-text">
+            <p>From twenty to thirty – a beautiful journey of growth, laughter, and dreams coming true.</p>
+            <p class="hero-emphasis">Join us as we tie up this incredible decade with the perfect bow.</p>
+          </div>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="scrollToSection('invite')">View Invitation Details</button>
+            <button class="btn btn-secondary" onclick="scrollToSection('messages')">Leave a Message</button>
+          </div>
+        </div>
+      </section>
+
+  <!-- Invitation Details Section -->
+  <section id="invite" class="invite-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>You're Invited to Celebrate</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="invite-content">
+        <div class="card">
+          <h3>When & Where</h3>
+          <div class="event-details">
+            <div class="detail-item">
+              <p class="detail-title">Saturday, June 28th, 2025</p>
+              <p>12:00 PM</p>
+            </div>
+            <div class="detail-item location">
+              <p class="detail-title">Ginja Restaurant</p>
+              <p>Victoria & Alfred Hotel</p>
+              <p>Waterfront, Cape Town</p>
+            </div>
+            <div class="detail-item dress-code">
+              <p class="detail-title">Dress Code</p>
+              <p>Cocktail attire in pastels & florals</p>
+              <p class="dress-note">Think garden party elegance</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RSVP Form -->
+        <div class="card">
+          <h3>RSVP</h3>
+          <div id="rsvpForm" class="rsvp-form">
+            <div class="form-group">
+              <input type="text" id="rsvpName" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="rsvpEmail" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <select id="rsvpAttending" required>
+                <option value="">Will you be attending?</option>
+                <option value="yes">Yes, I'll be there</option>
+                <option value="no">Sorry, can't make it</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" id="rsvpDietary" placeholder="Any dietary restrictions?" />
+            </div>
+            <div class="form-group">
+              <textarea id="rsvpMessage" placeholder="Birthday wishes for the birthday girl" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary btn-full" onclick="submitRSVP()">Send RSVP</button>
+          </div>
+          <div id="rsvpSuccess" class="success-message" style="display: none;">
+            <h4>Thank You!</h4>
+            <p>Your RSVP has been received. Can't wait to celebrate with you!</p>
+          </div>
+        </div>
+      </div>
+
+  <!-- Messages of Love Section -->
+  <section id="messages" class="messages-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Messages of Love</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">
+          Share your favorite memory, a heartfelt wish, or simply let her know how much she means to you. These messages will be compiled into a beautiful keepsake.
+        </p>
+      </div>
+
+      <div class="messages-content">
+        <div class="card">
+          <h3>Leave Your Message</h3>
+          <div id="messageForm" class="message-form">
+            <div class="form-group">
+              <input type="text" id="messageName" placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <textarea id="messageText" placeholder="Your message for the birthday girl..." rows="5"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary btn-full" onclick="submitMessage()">Send Message</button>
+          </div>
+          <div id="messageSuccess" class="success-message" style="display: none;">
+            <h4>Message Sent!</h4>
+            <p>Your words have been added to her collection of love.</p>
+          </div>
+        </div>
+
+        <div class="message-info">
+          <div class="info-card">
+            <h4>Message Ideas</h4>
+            <ul class="message-ideas">
+              <li>Share your favorite memory from her twenties</li>
+              <li>Tell her what she means to you</li>
+              <li>Share a wish for her thirties</li>
+              <li>Recall a moment she made you laugh</li>
+              <li>Describe how she's grown over the years</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h4>A Special Keepsake</h4>
+            <p>
+              All messages will be beautifully compiled into a memory book — a perfect way to tie up her twenties with love from the people who matter most.
+            </p>
+          </div>
+
+          <div class="info-card quote-card">
+            <p class="quote-text">"The best gifts are the words we share from the heart."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-main">Thank you for celebrating her journey</p>
+        <p class="footer-contact">For questions about the celebration, reach out at celebrate@example.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
