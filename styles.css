@@ -480,3 +480,148 @@ h1, h2, h3, h4 {
   text-align: center;
   font-size: 1.25rem;
 }
+
+/* ========== ADDITIONAL INFO SECTION ========== */
+.additional-info-section {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #fefdfb, #fdf2f8);
+  position: relative;
+  overflow: hidden;
+}
+
+.info-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .info-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gift-intro {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #9d174d;
+}
+
+.store-list {
+  margin: 1.5rem 0;
+}
+
+.store-group h4 {
+  color: #be185d;
+  margin-bottom: 0.75rem;
+}
+
+.store-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.store-group li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.store-group li:before {
+  content: "•";
+  color: #ec4899;
+  position: absolute;
+  left: 0;
+}
+
+.gift-note {
+  font-style: italic;
+  color: #be185d;
+  margin-top: 1.5rem;
+}
+
+.dress-inspiration {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.dress-inspiration li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.dress-inspiration li:before {
+  content: "•";
+  color: #ec4899;
+  position: absolute;
+  left: 0;
+}
+
+.celebration-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.celebration-details li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.celebration-details li:before {
+  content: "•";
+  color: #ec4899;
+  position: absolute;
+  left: 0;
+}
+
+/* Decorative Bows */
+.bow-decoration {
+  position: absolute;
+  font-size: 2rem;
+  color: #f472b6;
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.bow-top-left {
+  top: 2rem;
+  left: 2rem;
+  transform: rotate(-15deg);
+}
+
+.bow-top-right {
+  top: 2rem;
+  right: 2rem;
+  transform: rotate(15deg);
+}
+
+.bow-bottom-left {
+  bottom: 2rem;
+  left: 2rem;
+  transform: rotate(15deg);
+}
+
+.bow-bottom-right {
+  bottom: 2rem;
+  right: 2rem;
+  transform: rotate(-15deg);
+}
+
+/* Event Type Styling */
+.event-type {
+  font-style: italic;
+  color: #be185d;
+  margin-top: 0.5rem;
+}
+
+/* RSVP Deadline Styling */
+.rsvp-deadline {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(252, 231, 243, 0.5);
+}
